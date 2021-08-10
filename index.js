@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const faker = require('faker');
 const _ = require('lodash');
-const port = 8001;
+const port = 8000;
 const fakerReminders = faker.lorem.text();
+
+
 app.get('/',(req, res) => {
   const count = 1;
   if(!count) {
